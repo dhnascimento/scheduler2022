@@ -7,7 +7,7 @@ import "components/DayListItem.scss";
 export default function DayListItem(props) {
 
     const formatSpots = (spots) => {
-        const singularOrPlural = spots > 0 && spots > 1 ? "spots" : "spot";
+        const singularOrPlural = (spots > 0 && spots) > 1 ? "spots" : "spot";
         return spots > 0 ? `${spots} ${singularOrPlural} remaining` : `no spots remaining`;
     }
 
